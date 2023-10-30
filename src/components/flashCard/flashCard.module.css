@@ -1,0 +1,98 @@
+.button {
+  color: #e9f4ff;
+  background-color: #A0C4FF;
+  outline: none;
+  border-color: #A0C4FF;
+  box-shadow: 0 0 0.25rem #A0C4FF;
+  border-radius: 0.75rem;
+}
+
+.button:hover {
+  outline: none;
+  border-color: #A0C4FF;
+  box-shadow: 0 0 0.5rem #353e4b;
+  border-radius: 0.75rem;
+  transition: 'border-shadow 0.3s ease'
+}
+
+.removeButton {
+  color: #000;
+  background-color: #fff;
+  outline: none;
+  border-color: #A0C4FF;
+  box-shadow: 0 0 0.25rem #A0C4FF;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+}
+
+
+.removeButton:hover {
+  outline: none;
+  border-color: #A0C4FF;
+  box-shadow: 0 0 0.5rem #353e4b;
+  border-radius: 0.75rem;
+  transition: 'border-shadow 0.3s ease'
+}
+
+.input {
+  color: #000;
+  padding: .5rem 1rem .5rem 1rem;
+  outline-width: 1px;
+  border-bottom: 1.3px solid;
+  border-color: rgb(33, 107, 117);
+}
+
+.input:focus {
+  outline: none; 
+  border-color: rgb(33, 107, 117);
+  box-shadow: 0 0 5px rgb(33, 107, 117);
+  border-radius: 5px;
+}
+
+.inputImage { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
+  background-color: #c1d3fe !important;
+  background-size: cover !important;
+  cursor:pointer;
+}
+.inputImage svg{
+  visibility: hidden;
+}
+
+.inputImageAdd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+  height: 200px;
+  width: 200px;
+  background-color: #c1d3fe !important;
+  background-size: cover !important;
+  cursor:pointer;
+  visibility: visible;
+}
+
+.inputImageAdd:hover {
+  stroke-width: 2;
+}
+.inputImage:hover {
+  cursor:pointer;
+  filter: grayscale(90%);
+}
+
+.inputImage:hover svg {
+  visibility: visible;
+}
+
+.image {
+  border-radius: 200px;
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}

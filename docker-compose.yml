@@ -1,0 +1,23 @@
+version: '3.8'
+networks:
+  web:
+    external: true
+volumes:
+  node_modules:
+services:
+  web:
+    container_name: anki_web
+    build: .
+    restart: always
+    stdin_open: true
+    tty: true
+    command: /bin/sh -c "yarn install --silent --ignore-optional && next dev"
+    networks:
+      - web
+    volumes:
+      - node_modules:/app/node_modules
+      - ./:/app
+    environment:
+      TZ: 'America/Sao_Paulo'
+    ports:
+      - '3002:3000'
